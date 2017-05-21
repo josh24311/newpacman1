@@ -1,0 +1,10 @@
+1.從pacman vs ghost 比賽 下載 project檔
+  網址: http://www.pacmanvghosts.co.uk/index.html
+2.利用eclipse 讀入現有marven project，有些資料夾會是白色，要修改build path
+  在package點右鍵 > Build Path > Configure Build Path，在sources 類別下的Excluded 把其內容清空
+3.因為該project是用marven的方式創立，所以除了src資料夾其他檔案都在url端，以致於無法修改一些參數
+  eclipse market 下載   eclipse class decompiler 2.9
+  載完之後在不能修改的 class檔案右鍵 > 導出反編譯源代碼，就可以解出可修改的.java檔
+  解完全部java檔之後，目前的檔案先備份在此repo
+
+ 
