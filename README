@@ -6,5 +6,23 @@
   eclipse market 下載   eclipse class decompiler 2.9
   載完之後在不能修改的 class檔案右鍵 > 導出反編譯源代碼，就可以解出可修改的.java檔
   解完全部java檔之後，目前的檔案先備份在此repo
-
+4.在eclipse 上 open project from exist project 讀入此檔
+5.會有幾個檔名多餘的現象，先暫時放到別處 
+  DNode.java
+  E.java
+  Junction.java
+  JunctionData.java
+  N.java
+6.Main.java 按  run 會有這個錯誤 
+Exception in thread "main" java.lang.ExceptionInInitializerError
+	at pacman.Executor.runGameTimed(Executor.java:282)
+	at Main.main(Main.java:33)
+Caused by: java.lang.NullPointerException
+	at java.io.Reader.<init>(Unknown Source)
+	at java.io.InputStreamReader.<init>(Unknown Source)
+	at java.util.Scanner.<init>(Unknown Source)
+	at pacman.game.internal.Maze.loadNodes(Maze.java:42)
+	at pacman.game.internal.Maze.<init>(Maze.java:31)
+	at pacman.game.Game.<clinit>(Game.java:50)
+	... 2 more
  
