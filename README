@@ -26,3 +26,11 @@ Caused by: java.lang.NullPointerException
 	at pacman.game.Game.<clinit>(Game.java:50)
 	... 2 more
  
+7.把pacman資料夾移到 src\main\java 後 可以 compile過(原先不行)，但仍然會有6.的錯誤顯示
+8.查到解說:
+A NullPointerException means that one of the variables you are passing is null, but the code tries to use it like it is not.
+For example, If I do this:
+	Integer myInteger = null;
+	int n = myInteger.intValue();
+The code tries to grab the intValue of myInteger, but since it is null, it does not have one: a null pointer exception happens.
+What this means is that your getTask method is expecting something that is not a null, but you are passing a null. Figure out what getTask needs and pass what it wants!
